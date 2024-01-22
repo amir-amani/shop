@@ -1,0 +1,131 @@
+.container {
+    border: 1px solid #D6CCC2;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 20px 50px;
+    text-align: center;
+    width: 200px;
+    transition: all .5s ease-in-out;
+
+}
+.container:hover {
+    box-shadow: 10px 10px 10px #D5BDAF;
+}
+
+
+.productIMG {
+    width: 150px;
+    height: 200px;
+}
+
+hr {
+    color: #D6CCC2;
+    font-weight: 100;
+}
+
+.productTitle {
+    max-width: 100%;
+    height: 50px;
+    /* background-color: gray; */
+    margin: 15px 0px 15px 0px;
+    font-weight: lighter;
+    font-size: small;
+}
+
+.productPrice {
+    margin: 15px 0px 15px 0px;
+    font-weight: bolder;
+    color: green;
+}
+
+.link {
+    line-height: 100%;
+    font-size: large;
+    border: 2px solid #D5BDAF;
+    padding: 3px 24px;
+    color: #D5BDAF;
+    font-weight: bolder;
+    transition: all .5s ease-in-out;
+}
+.link:hover {
+    color: white;
+    background-color: #D5BDAF;
+}
+
+.productDetail {
+    margin-top: 15px;
+    padding: 10px;
+    line-height: 5px;
+    color: black;
+}
+
+
+.counter {
+    margin: 3px;
+    font-weight: bold;
+    color: gray;
+}
+
+.addToCart {
+    width: 100px;
+    margin-bottom: 0px;
+    height: 30px;
+    cursor: pointer;
+    background-color: transparent;
+    border: 2px solid #D6CCC2;
+    color: gray;
+    transition: all .5s ease-in-out;
+}
+
+.addToCart:hover {
+    color: black;
+    border: 2px solid black;
+}
+
+.increase {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    background-color: transparent;
+    border: 2px solid #D6CCC2;
+    color: gray;
+    margin: 5px;
+    transition: all .5s ease-in-out;
+    font-size: large;
+    font-weight: bold;
+
+}
+.increase:hover {
+    color: green;
+    border: 2px solid green;
+}
+.decrease {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    background-color: transparent;
+    border: 2px solid #D6CCC2;
+    color: gray;
+    margin: 5px;
+    transition: all .5s ease-in-out;
+    font-size: large;
+    font-weight: bold;
+}
+.decrease:hover {
+    color: red;
+    border: 2px red solid;
+}
+
+
+.removeBtn {
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
+    background-color: transparent;
+    border: 2px solid red;
+    margin: 5px;
+}
+.removeBtn div img{
+    width: 100%;
+    height: 100%;
+}

@@ -1,0 +1,76 @@
+.container {
+    width: 30%;
+    height: 40px;
+    border-radius: 5px;
+    border: 2px solid #D5BDAF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+}
+
+.container input {
+    height: 95%;
+    width: calc(100% - 49px);
+    border: none;
+    outline: none;
+    font-size: large;
+    background-color: transparent;
+    color: gray;
+}
+
+.container div {
+    width: 40px;
+    height: 100%;   
+}
+
+.field {
+    position: absolute;
+    top: 100%;
+    width: fit-content;
+    height: 500px;
+    border: #D5BDAF 2px solid;
+    background-color: white;
+    overflow-y: auto;    
+    overflow-x: hidden;
+    text-align: center;
+
+}
+.fieldHidden {
+    display: none;
+}
+
+.fieldBtn {
+    width: 30px;
+    height: 30px;
+    color: #D5BDAF;
+    cursor: pointer;
+    transition: all .5s ease-in-out;
+    font-weight: bold;
+    background-color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    position: sticky;
+    top: 5px;
+    z-index: 2;
+}
+.fieldBtn:hover {
+    color: white;
+    background-color: #D5BDAF;
+}
+
+.notfound {
+    width: 300px;
+    font-weight: bolder;
+    margin-top: 200px;
+    color: #D5BDAF;
+}
+
+
+@media only screen and (max-width: 1010px) {
+    .container {
+        width: 50%;
+    }
+}

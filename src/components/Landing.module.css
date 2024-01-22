@@ -1,0 +1,31 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+
+.title {
+    margin-top: 30px;
+    font-family: cursive;
+    color: #D6CCC2;
+}
+
+
+.btn {
+    width: 150px;
+    height: 30px;
+    background-color: white;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    cursor: pointer;
+    border: 2px solid #D5BDAF;
+    transition: all .5s ease-in-out;
+    font-weight:550;
+}
+.btn:hover {
+    color: white;
+    background-color: #D5BDAF;
+}

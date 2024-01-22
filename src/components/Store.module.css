@@ -1,0 +1,12 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.text {
+    color:#D5BDAF;
+    text-align: center;
+    margin: 10px;
+}

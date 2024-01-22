@@ -1,0 +1,49 @@
+.loginPage {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loginCard {
+    border: 1px gray solid;
+    border-radius: 10px;
+    padding: 20px 35px;
+    width: 300px;
+    text-align: center;
+}
+
+.loginCard h2 {
+    color: rgb(93, 93, 93);
+    font-size: 1.3rem;
+    margin-bottom: 40px;
+}
+
+
+.button {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: lightgray;
+    padding: 10px;
+    width: fit-content;
+    margin: 0 auto;
+    color: black;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all .2s ease;
+}
+
+.button img {
+    width: 70px;
+    margin-right: 10px;
+}
+
+.button p {
+    font-weight: bolder;
+}
+
+.button:hover {
+    opacity: 80%;
+}

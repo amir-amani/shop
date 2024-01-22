@@ -1,0 +1,129 @@
+@keyframes toRightAnimation {
+    from {transform: translateX(-200px);}
+    to {transform: translateX(0px);}
+}
+@keyframes toLeftAnimation {
+    from {transform: translateX(200px);}
+    to {transform: translateX(0px);}
+}
+@keyframes toUpAnimation {
+    from {transform: translateY(-200px);
+        opacity: 0%;}
+    to {transform: translateY(0px);
+        opacity: 100%;}
+}
+
+@keyframes toDownAnimation {
+    from {transform: translateY(0px);
+        opacity: 100%;}
+    to {transform: translateY(-200px);
+        opacity: 0%;}
+}
+
+@keyframes general {
+    from {opacity: 0%;}
+    to {opacity: 100%;}
+}
+
+
+.category {
+    width: 90%;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+    border: 1px solid #D5BDAF;
+    border-radius: 5px;
+
+    margin-top: 10px;
+
+    position: relative;
+
+
+}
+
+
+.toRight {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: white;
+    font-weight: bolder;
+    font-size: 1rem;
+    text-align: center;
+    cursor: pointer;
+    border: 2px solid #D5BDAF;
+    position: absolute;
+    right: -20px;
+    color: #D5BDAF;
+    transition: all .5s ease-in-out;
+    z-index: 1;
+}
+.toRight:hover {
+    color: white;
+    background-color: #D5BDAF;
+}
+
+.toLeft {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: white;
+    font-weight: bolder;
+    font-size: 1rem;
+    text-align: center;
+    cursor: pointer;
+    border: 2px solid #D5BDAF;
+    position: absolute;
+    left: -20px;
+    color: #D5BDAF;
+    transition: all .5s ease-in-out;
+    z-index: 1;
+}
+.toLeft:hover {
+    color: white;
+    background-color: #D5BDAF;
+}
+
+
+.carouselContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+
+    overflow-x: hidden;
+}
+@media only screen and (max-width: 600px) {
+    .carouselContainer {
+        flex-wrap: wrap;
+
+        height: 450px;
+        padding: 10px;
+
+        overflow-y: hidden;
+    }
+}
+
+
+
+/* these are useless */
+.goRight {
+    animation: toRightAnimation 1s;
+}
+.goLeft {
+    animation: toLeftAnimation 1s;
+}
+.goUp {
+    animation: toUpAnimation 1s;
+}
+.goDown {
+    animation: toDownAnimation 1s;
+}
+
+
+.general {
+    animation: general 2s;
+}

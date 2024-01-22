@@ -1,0 +1,105 @@
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    width: 100%;
+    margin-top: 30px;
+}
+
+.infoContainer {
+    position: fixed;
+    top: 100px;
+    right: 50px;
+    border: 1px solid #D5BDAF;
+    padding: 10px;
+    color: gray;
+    transition: all .5s ease-in-out;
+    font-weight: bolder;
+    background-color: white;
+}
+.infoContainer:hover {
+    color: black;
+}
+
+.infoContainer span {
+    transition: all .5s ease-in-out;
+}
+.infoContainer:hover span {
+    color: green;
+}
+
+.infoContainer p {
+    margin: 10px;
+}
+
+
+.clearBtn , .checkOutBtn {
+    width: 100px;
+    margin-bottom: 0px;
+    height: 30px;
+    cursor: pointer;
+    background-color: transparent;
+    border: 2px solid #D6CCC2;
+    color: gray;
+    transition: all .5s ease-in-out;
+    margin: 10px;
+}
+
+.clearBtn:hover {
+    border: 2px solid red;
+    color: red;
+}
+
+.checkOutBtn:hover {
+    border: 2px solid green;
+    color: green;
+}
+
+
+
+.postActionContainer {
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.postActionContainer h1 {
+    color: #D5BDAF;
+}
+
+
+
+.btn {
+    width: 150px;
+    height: 30px;
+    background-color: white;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    cursor: pointer;
+    border: 2px solid #D5BDAF;
+    transition: all .5s ease-in-out;
+    font-weight:550;
+}
+.btn:hover {
+    color: white;
+    background-color: #D5BDAF;
+}
+
+
+@media only screen and (max-width: 1010px) {
+    .container {
+        flex-wrap: wrap-reverse;
+        justify-content: center;
+    }
+
+    .infoContainer {
+        position: relative;
+        top: 0;
+        right: 0;
+        width: 90vw;
+    }
+}
